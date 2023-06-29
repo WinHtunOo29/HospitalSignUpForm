@@ -1,0 +1,6 @@
+framework module Pods_OnenexCodingTestTests {
+  umbrella header "Pods-OnenexCodingTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

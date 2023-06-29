@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="BirthDateCell" customModule="OnenexCodingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeC-FN-CnO">
+                        <rect key="frame" x="10" y="9.9999999999999982" width="300" height="16.333333333333329"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YYYY-MM-DD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpg-2r-skO">
+                        <rect key="frame" x="10" y="36.333333333333336" width="300" height="40.000000000000007"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="XKW-d6-cSG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfm-Qh-Sfp">
+                        <rect key="frame" x="261.33333333333331" y="36.333333333333336" width="50.666666666666686" height="35.000000000000007"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="calendar" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="IeC-FN-CnO" secondAttribute="trailing" constant="10" id="5ih-J7-J9A"/>
+                    <constraint firstItem="IeC-FN-CnO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5x0-G9-gme"/>
+                    <constraint firstAttribute="trailing" secondItem="dpg-2r-skO" secondAttribute="trailing" constant="10" id="895-Rg-e5p"/>
+                    <constraint firstAttribute="trailing" secondItem="Dfm-Qh-Sfp" secondAttribute="trailing" constant="8" id="Kow-NF-WKP"/>
+                    <constraint firstItem="Dfm-Qh-Sfp" firstAttribute="top" secondItem="IeC-FN-CnO" secondAttribute="bottom" constant="10" id="Te4-O1-S8A"/>
+                    <constraint firstItem="dpg-2r-skO" firstAttribute="top" secondItem="IeC-FN-CnO" secondAttribute="bottom" constant="10" id="Tuh-SR-vGe"/>
+                    <constraint firstItem="IeC-FN-CnO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rUb-Ao-VTQ"/>
+                    <constraint firstItem="dpg-2r-skO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wH9-JJ-blh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCalendar" destination="Dfm-Qh-Sfp" id="BUA-FF-g25"/>
+                <outlet property="lbBirthDate" destination="IeC-FN-CnO" id="XWt-uO-1Us"/>
+                <outlet property="txtBirthDate" destination="dpg-2r-skO" id="wSd-aK-gIO"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="35.91549295774648"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+    </resources>
+</document>

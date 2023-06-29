@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-OnenexCodingTest-OnenexCodingTestUITests/Pods-OnenexCodingTest-OnenexCodingTestUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DatePicker/DatePicker.framework
+${BUILT_PRODUCTS_DIR}/Extended/Extended.framework
+${BUILT_PRODUCTS_DIR}/UIMultiPicker/UIMultiPicker.framework
